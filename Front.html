@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="ajax.js"></script>
+	</head>
+	<div class="form-container">
+		<form id="form">
+			<h1 class="form-title">Contacta con nosotros</h1>
+			<div id="first-line">
+				<input type="text" id="name" placeholder="Nombre*" class="textInput" required></input>
+				<input type="text" id="email" placeholder="Email*" class="textInput" required></input>
+			</div>
+			<div id="second-line">
+				<input type="tel" pattern="[0-9]{9}" id="phone" placeholder="Teléfono" class="textInput"></input>
+				<input type="text" id="subject" placeholder="Asunto" class="textInput"></input>
+			</div>
+			<div>
+				<textarea placeholder="Comentarios*" id="comments" required ></textarea>
+			</div>
+			<div>
+				<input type="checkbox" required id="acknowledged" display="block">He leido y acepto la <a href="">política de privacidad</a></input>
+			</div>
+			<div>
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</div>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+	html *{
+		font-family: "Monserrat", sans-serif;
+	}
+
+	.form-container{ 
+		display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	}
+	.form-title{
+		font-weight:bolder;
+
+	}
+	textarea{
+		border-radius:15px;
+		background-color: #f9f9f9;
+		padding: 1em;
+		border: 0px;
+		width: 51em;
+		height: 10em;
+	}
+	.textInput{
+		border-radius:15px;
+		background-color: #f9f9f9;
+		padding-left: 1em;
+		border: 0px;
+		height: 3em;
+		width: 25em;
+	}
+	a{
+		font-weight: bolder;
+	}
+	::placeholder{
+		color:#b4b4b4;
+		opacity: 0.7;
+		padding-left: 1em;
+	}
+	button{
+		border-radius: 10px;
+		width: 6em;
+		height: 3em;
+		color: white;
+		border: 0px;
+		background-color: #2596be;
+	}
+
+	div{
+	  margin: 10px;
+	  padding: 10px;
+	}
+</style>
+
